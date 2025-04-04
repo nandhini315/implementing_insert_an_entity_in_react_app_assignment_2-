@@ -36,6 +36,9 @@ const Dashboard = () => {
       <header className="dashboard-header">
         <h1>Movie Collection</h1>
       </header>
+      <div className="flex justify-centre items-center" >
+        <button onClick={() => navigate('/add-movie')} className="add-movie-button">Add Movie</button>
+      </div>
       <div className="movie-list">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
